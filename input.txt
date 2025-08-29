@@ -1,0 +1,5 @@
+ 1.Learning Python opens many career opportunities.
+ 2.Working with files helps in data management.
+ 3.Automation saves time and reduces errors.
+ 4.Debugging is an essential skill for programmers.
+ 5.Consistency is the key to mastering coding.
