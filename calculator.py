@@ -1,14 +1,19 @@
+first_num = float(input("Enter first number: "))
+second_num = float(input("Enter second number: "))
+operator = input("Choose mathematical operator (+, -, *, /): ")
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-sum_result = num1 + num2
-difference_result = num1 - num2
-product_result = num1 * num2
-quotient_result = num1 / num2
+if operator == "+":
+    result = first_num + second_num
+elif operator == "-":
+    result = first_num - second_num
+elif operator == "*" or operator.lower() == "x":
+    result = first_num * second_num
+elif operator == "/":
+    if second_num != 0:
+        result = first_num / second_num
+    else:
+        result = "Error! Division by zero."
+else:
+    result = "Invalid operation"
 
-print(f"Results of your two numbers:")
-print(f"Sum: {sum_result}") 
-print(f"Difference: {difference_result}") 
-print(f"Product: {product_result}")  
-print(f"Quotient: {quotient_result}")  
-
+print(f"{first_num} {operator} {second_num} = {result}")
